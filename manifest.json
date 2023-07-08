@@ -1,0 +1,21 @@
+{
+	"name": "Unclutter Stack Overflow ",
+	"version": "1.0",
+	"manifest_version": 3,
+	"author": "chrisreylo",
+	"description": "Removes and cleans Sack Overflows UI",
+	"action": {
+		"default_icon": "icons/SF.png"
+	},
+	"content_scripts": [
+		{
+			"matches": ["https://stackoverflow.com/questions/*"],
+			"js": ["content.js"],
+			"run_at": "document_end"
+		}
+	],
+	"permissions": ["activeTab", "storage"],
+	"background": {
+		"service_worker": "background.js"
+	}
+}
