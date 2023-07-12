@@ -1,2 +1,2 @@
 # StackGlide
-Web app that aims to de-clutter stack overflow.
+Aims to de-clutter stack overflow.
